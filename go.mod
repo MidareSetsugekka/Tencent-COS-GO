@@ -1,4 +1,4 @@
-module github.com/MidareSetsugekka/tencent-cos-go/v0.1
+module tencent-cos-go
 
 go 1.16
 
