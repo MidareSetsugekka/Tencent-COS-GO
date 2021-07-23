@@ -263,3 +263,7 @@ func (client Client) ListObject(opt *cos.BucketGetOptions) (*cos.BucketGetResult
 
 	return result, response
 }
+
+func IsDir(object cos.Object) bool {
+	return object.Key[len(object.Key)-1:] == "/"
+}
